@@ -8,6 +8,15 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+
+// List node cllass defination
+public class ListNode {
+    int val;
+    ListNode next;
+    ListNode(){};
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+}
 class Solution {
     public ListNode middleNode(ListNode head) {
         int num = 0;
@@ -15,7 +24,7 @@ class Solution {
         ListNode current = head;
 
         
-        while(current != null) {
+        while(current != null) { // run on the last element too // then the current become null element 
             current = current.next;
             num ++;
         }
