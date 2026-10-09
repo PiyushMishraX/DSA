@@ -1,3 +1,4 @@
+import java.util.HashMap;
 class Solution {
     public int[] twoSum(int[] nums, int target) {
 
@@ -48,7 +49,7 @@ class Solution {
         // return new int[]{};
 
 
-        // two pass hash map
+        // two pass hash map // hash table
 
         // Map<Integer, Integer> map = new HashMap<>();
         HashMap<Integer, Integer> map = new HashMap<>();
