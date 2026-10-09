@@ -1,3 +1,9 @@
+// using sorting method
+// 2 hashmaps
+// single hashmap
+
+import java.util.HashMap;
+
 class Solution {
     public boolean isAnagram(String s, String t) {
 
