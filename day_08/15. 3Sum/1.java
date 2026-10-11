@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// triplets with sum equal to zero
+
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
 
