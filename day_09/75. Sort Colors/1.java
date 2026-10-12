@@ -1,4 +1,5 @@
 class Solution {
+    // dutch national flag algorithm to sort colors
     public void sortColors(int[] nums) {
 
         int low = 0, mid = 0 , high = nums.length -1;
@@ -27,3 +28,4 @@ class Solution {
         
     }
 }
+
