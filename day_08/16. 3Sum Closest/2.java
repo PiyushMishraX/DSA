@@ -4,10 +4,14 @@ class Solution {
     public int threeSumClosest(int[] nums, int target) {
 
         int n = nums.length;
+      
 
-        int closestSum = Integer.MAX_VALUE;       
-        int minDiff = Integer.MAX_VALUE;       
+        // int closestSum = Integer.MAX_VALUE;  // overflow is occuring(might be occuring)      
+        // int closestSum ;       
+        int closestSum = 1000000001;       
+        // int closestSum = nums[1] + nums[2] + nums[3]; // as the values are unique // can use it      
 
+        // int minDiff = Integer.MAX_VALUE; 
 
         Arrays.sort(nums);
 
