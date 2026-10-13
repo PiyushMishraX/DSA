@@ -1,5 +1,7 @@
 // Triplets with Smaller Sum
 
+import java.util.Arrays;
+
 class Solution {
     int countTriplets(int sum, int arr[]) {
         // code here
