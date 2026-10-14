@@ -34,6 +34,8 @@ class Solution {
 
 
 
+        // System.gc(); // garbage clear for space complexity
+
 
         return max;
         
