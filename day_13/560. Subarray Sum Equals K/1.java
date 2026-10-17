@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 class Solution {
     public int subarraySum(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -11,7 +13,7 @@ class Solution {
             sumCurrent += nums[i];
             
             int target = sumCurrent - k;
-            if ( map.containsKey(target) ) {
+            if ( map.containsKey(target) ) { // k == TARGET + current sum
                 
                 count = count + map.get(target);
             }
