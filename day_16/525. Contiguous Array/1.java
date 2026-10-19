@@ -1,0 +1,60 @@
+import java.util.HashMap;
+
+class Solution {
+    public int findMaxLength(int[] nums) {
+        int n = nums.length;
+        // int zero = 0 , one = 0;
+        int sum = 0;
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        // int res = 0;
+        // for( int i = 0; i < n; i++){
+        //     if( nums[i] == 0)
+        //         zero++;
+        //     else
+        //         one++;
+
+        //     int diff = zero - one;
+        //     if( diff == 0){
+        //         res = Math.max(res, i+1);
+        //         continue;
+        //     }
+
+        //     if( !map.containsKey(diff)){
+        //         map.put(diff, i);
+        //     } else {
+        //         int idx = map.get(diff);
+        //         int len = i - idx;
+
+        //         res = Math.max(res, len);
+        //     }
+        // }
+
+        int res = 0;
+        for( int i = 0; i < n; i++){
+            if( nums[i] == 0)
+                sum++;
+            else
+                sum--;
+
+            if( sum == 0){
+                res = Math.max(res, i + 1);
+                continue;
+            }
+
+            if( !map.containsKey(sum)){
+                map.put(sum, i);
+            } else {
+                // int idx = map.get(sum);
+                // int len = i - idx;
+
+                // res = Math.max(res, len);
+                res = Math.max(res, ( i - map.get(sum)));
+            }
+        }
+
+
+        return res;
+    }
+}
