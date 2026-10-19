@@ -16,6 +16,8 @@ class NumMatrix {
         for( int i = 1; i < row; i++){
             for(int j = 1; j < column; j ++){
                 prefix2D[i][j] = prefix2D[i-1][j] + matrix[i-1][j-1] + prefix2D[i][j-1] - prefix2D[i-1][j-1];
+
+                // - prefix2D[i-1][j-1]; this value is added both in the row and column additions so removing it one time gives accurate value
             }
         }
 
