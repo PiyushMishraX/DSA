@@ -40,7 +40,7 @@ class Solution {
         int[] arr = new int[26];
 
         for(char c: ransomNote.toCharArray()){
-           int  ind = magazine.indexOf(c , arr[c - 'a']);
+           int  ind = magazine.indexOf(c , arr[c - 'a']); // we search c for - 1 , and the later gives index to access in arr instead oof index in magzine string
 
            if( ind == -1) return false;
 
