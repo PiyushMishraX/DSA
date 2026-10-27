@@ -2,7 +2,7 @@ class Solution {
     public int longestOnes(int[] nums, int k) {
 
         int n = nums.length;
-        int[] freq = new int[2];
+        // int[] freq = new int[2];
         int low = 0, max = 0;
         int zeros = 0;
 
