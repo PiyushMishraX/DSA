@@ -1,3 +1,6 @@
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 class MyQueue {
     private final Deque<Integer> inStack;
     private final Deque<Integer> outStack;
